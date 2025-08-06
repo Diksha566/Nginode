@@ -13,3 +13,15 @@ The server handles incoming HTTP requests and responds with the appropriate file
 - Simple MIME type mapping for supported file types
 - Custom 404 response for files not found
 - Lightweight and dependency-free
+
+  
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) installed on your system
+
+### Running the Server
+
+```bash
+node server.js
