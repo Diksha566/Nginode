@@ -57,7 +57,7 @@ const server = http.createServer((req, res) => {
     if (err) {
       if (err.code === "ENOENT") {
         res.writeHead(404, { "Content-Type": "text/html" });
-        res.end("404: File not found");
+        res.end("Page took a vacation due !");
       } else {
         res.writeHead(500, { "Content-Type": "text/plain" });
         res.end(`Server Error: ${err.code}`);
