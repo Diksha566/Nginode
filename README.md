@@ -1,22 +1,15 @@
-# Nginode
+# Simple Static File Server with Node.js
 
-A lightweight, no-framework reverse proxy and static file server built with **pure Node.js** — inspired by Nginx.
+This project is a lightweight static file server built using Node.js core modules (`http`, `fs`, and `path`). It is designed to serve `.html`, `.css`, `.js`, and `.png` files without relying on any external dependencies or frameworks.
 
-`Nginode` serves as a simplified version of what a real-world HTTP server and reverse proxy like Nginx does: it handles static files, forwards API traffic to backend servers, applies gzip compression, and implements basic rate limiting and request logging — all from scratch.
+## 📌 Overview
 
----
+The server handles incoming HTTP requests and responds with the appropriate file based on the requested URL. It defaults to serving `index.html` at the root path (`/`) and includes basic error handling for missing or unreadable files.
 
-## 🚀 Features
+## ✅ Features
 
-- ⚡ **Static File Serving**
-  - Serve `.html`, `.css`, `.js`, images, fonts, and more
-- 🔁 **Reverse Proxy**
-  - Automatically proxies all `/api/*` routes to a backend server (`http://localhost:5000`)
-- 🛡️ **Rate Limiting**
-  - 100 requests per minute per IP address
-- 🗜️ **Gzip Compression**
-  - Automatically compresses supported responses
-- 📊 **Request Logging**
-  - Logs timestamp, HTTP method, path, and status code to console
-- 🧠 **No Dependencies (except `http-proxy`)**
-  - Built entirely with native Node.js modules
+- Serves static files: `.html`, `.css`, `.js`, and `.png`
+- Automatically resolves requests to `index.html` at root
+- Simple MIME type mapping for supported file types
+- Custom 404 response for files not found
+- Lightweight and dependency-free
